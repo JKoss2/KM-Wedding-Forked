@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="css/queries.css">
     <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="preload" as="image" href="img/St_Armands_Proposal_Centered.JPG">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 <body id="top">
@@ -55,14 +56,13 @@
                         <ul class="primary-nav">
                             <li><a href="#intro">How we met</a></li>
                             <li><a href="#events">Events</a></li>
-                            <li><a href="#instagram">Instagram</a></li>
                             <li><a href="#eng-pics">Engagement</a></li>
                             <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the area</a></li>
-                            <li><a href="#map" class="login">Venue</a></li>
+                            <li><a href="#instagram">Photography</a></li>
                         </ul>
                         <ul class="member-actions">
                             <li><a href="#map" class="login">Venue</a></li>
-                            <li><a href="#rsvp" class="btn-white btn-small">RSVP</a></li>
+                            <li><a href="#rsvp" id="head_rsvp_btn" class="btn-white btn-small">RSVP</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -76,17 +76,15 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="hero-content text-center">
-                    <!--<h1>Ram and Antara</h1>-->
                     <!--img src="img/logo-lg.png"-->
-                    <!--<p class="intro">Ram & Antara are getting hitched!</p>-->
-                    <!--<a href="#" class="btn btn-fill btn-large btn-margin-right">Scroll Down</a> -->
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-4 hidden-xs"></div>
-            <div class="col-sm-4 hidden-xs text-center"><!--a href="#rsvp"
-                                                           class="btn btn-accent btn-large rsvp-btn">RSVP</a--></div>
+            <div class="col-sm-4 hidden-xs text-center">
+                <a href="#rsvp" class="btn btn-accent btn-large rsvp-btn">RSVP</a>
+            </div>
             <div class="col-sm-4 hidden-xs"></div>
         </div>
     </div>
@@ -100,7 +98,6 @@
                 <h3>We are getting hitched</h3>
                 <p>The dates are 27<sup>th</sup> & 28<sup>th</sup> of November '17 and we would like you to be a part of
                     it.</p>
-                <div class="share-bar"></div>
             </div>
         </div>
     </div>
@@ -110,7 +107,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center">
-                <h3 class="header">How we met</h3>
+                <h3 class="header">Information maybe?</h3>
             </div>
         </div>
         <div class="row">
@@ -118,11 +115,7 @@
             <div class="col-md-6">
                 <p>
                     Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
-                    Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
-                    Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
-                    Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
-                    Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder
-                    Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder Placeholder :)
+                    :)
                 </p>
             </div>
             <div class="col-md-3 hidden-sm hidden-xs"><!--img src="img/DSD_0214.jpg" class="wp2"--></div>
@@ -234,24 +227,6 @@
         </div><!-- /.modal-dialog -->
     </div><!-- /.modal -->
 
-</section>
-
-<section id="instagram" class="section-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <h3>A picture is worth a thousand words!</h3>
-                <p>Help us capture the moment, tag your photos with the hashtag
-                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#TBDTBDTBD</a>
-                </p>
-            </div>
-        </div>
-        <div class="row section-border wp7">
-            <div class="col-md-4 col-md-offset-4">
-                <img src="img/iphone_instagram.jpg">
-            </div>
-        </div>
-    </div>
 </section>
 
 <section id="eng-pics" class="section-padding">
@@ -393,6 +368,24 @@
     </div>
 </section>
 
+<section id="instagram" class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h3>A picture is worth a thousand words!</h3>
+                <p>Help us capture the moment, tag your photos with the hashtag
+                    <a href="https://instagram.com/explore/tags/ramandantara/" target="_blank">#TBDTBDTBD</a>
+                </p>
+            </div>
+        </div>
+        <div class="row section-border wp7">
+            <div class="col-md-4 col-md-offset-4">
+                <img src="img/iphone_instagram.jpg">
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="rsvp text-center" id="rsvp">
 
     <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
@@ -414,54 +407,15 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                <script type="text/javascript" src="https://569333464.rsvpify.com/embed"></script>
                 <h3>We can't wait to see you!</h3>
                 <p>We would greatly appreciate if you could RSVP before 1st of October 2024</p>
-<!--                <form id="rsvp-form" class="rsvp-form"-->
-<!--                      action=""-->
-<!--                      method="POST">-->
-<!--                    <div class="row">-->
-<!--                        <div class="col-md-6 col-sm-6">-->
-<!--                            <div class="form-input-group">-->
-<!--                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""-->
-<!--                                                                     placeholder="Your email"-->
-<!--                                                                     required>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-6 col-sm-6">-->
-<!--                            <div class="form-input-group">-->
-<!--                                <i class="fa fa-user"></i><input name="name" class=""-->
-<!--                                                                 placeholder="Your name"-->
-<!--                                                                 required>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="row">-->
-<!--                        <div class="col-md-6 col-sm-6">-->
-<!--                            <div class="form-input-group">-->
-<!--                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"-->
-<!--                                                                  max="4"-->
-<!--                                                                  placeholder="Husband/Wife or kids"-->
-<!--                                                                  required>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-6 col-sm-6">-->
-<!--                            <div class="form-input-group">-->
-<!--                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"-->
-<!--                                                                class="" min="0"-->
-<!--                                                                placeholder="Invite code"-->
-<!--                                                                required>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                    <div class="row">-->
-<!--                        <div class="col-md-12" id="alert-wrapper"></div>-->
-<!--                    </div>-->
-<!--                    <button class="btn-fill rsvp-btn">-->
-<!--                        Yes,-->
-<!--                        that's me!-->
-<!--                    </button>-->
-<!--                </form>-->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="rsvp_form">
+                    <script type="text/javascript" src="https://569333464.rsvpify.com/embed"></script>
+                </div>
             </div>
         </div>
     </div>
