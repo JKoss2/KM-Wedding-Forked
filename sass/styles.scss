@@ -36,14 +36,16 @@ a:hover, a:focus {
   color: $accent-color-hover;
   text-decoration: none;
 }
+html{
+  scroll-snap-type: y proximity;
+}
 body {
   font-family: $sans-serif;
   font-weight: $light;
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
   //fix for iOS
-  scroll-snap-type: y proximity;
-  scroll-snap-stop: always;
+
 }
 *:focus {
   outline: none !important;
@@ -808,11 +810,24 @@ RSVP form
 .rsvp_form {
   overflow: hidden;
   height: calc(100vh - 49px);
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  max-height: 800px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid rgb(214, 217, 220);
+  .no_load{
+    p {
+      color: #888;
+      font-size: 30px;
+      line-height: 50px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
 }
 .rsvp {
+
   scroll-snap-align: start;
 }
 
