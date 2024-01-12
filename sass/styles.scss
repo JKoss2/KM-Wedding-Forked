@@ -42,6 +42,8 @@ body {
   color: $txt-primary;
   -webkit-text-size-adjust: 100%;
   //fix for iOS
+  scroll-snap-type: y proximity;
+  scroll-snap-stop: always;
 }
 *:focus {
   outline: none !important;
@@ -651,12 +653,22 @@ Features-stack
 }
 
 /* ==========================================================================
-Instagram
+Dress Code / Attire
 ========================================================================== */
-#instagram {
-  img {
-    width: 100%;
-  }
+#attire_header {
+  margin: 10px 0;
+  padding: 20px 0;
+}
+
+#general_attire {
+  display: block;
+  font-size: 18px;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /* ==========================================================================
@@ -795,9 +807,13 @@ RSVP form
 ========================================================================== */
 .rsvp_form {
   overflow: hidden;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  height: calc(100vh - 49px);
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.rsvp {
+  scroll-snap-align: start;
 }
 
 /* ==========================================================================
