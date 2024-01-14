@@ -59,6 +59,9 @@
                                 <li><a href="#eng-pics">Engagement</a></li>
                                 <li class="hidden-sm hidden-xs"><a href="#video-bg">Glimpse of the area</a></li>
                                 <li><a href="#photography">Photography</a></li>
+                                <li><a href="#accommodations">Accommodations</a></li>
+                                <li><a href="#poi">PoI</a></li>
+                                <li><a href="#registry">Registry</a></li>
                             </ul>
                             <ul class="member-actions">
                                 <li><a href="#map" class="login">Venue</a></li>
@@ -125,7 +128,6 @@
             </div>
         </div>
     </section>
-
     <section class="events section-padding" id="events">
         <div class="container">
             <div class="row">
@@ -303,7 +305,6 @@
     <section id="map" class="section-padding">
         <div class="text-center">
             <h3>How do I get there?</h3>
-            <p>It's way easier than you think!</p>
         </div>
         <div id="map-canvas"></div>
         <div id="map-content-wrapper" class="container pointer-events-none">
@@ -316,25 +317,22 @@
                     </div>
                     <div id="map-content" class="pointer-events-auto">
                         <div class="row">
-                            <div class="col-md-6">
-                                <h5>ITC Fortune Park</h5>
-                                <p>Kona Expressway, Celebration, Florida 711403</p>
+                            <div class="col-md-6 text-center">
+                                <h4>Ceremony</h4>
+                                <h5>Corpus Christi</br>Catholic Church</h5>
+                                <p><a href="https://maps.apple.com/?address=1050%20Celebration%20Ave,%20Celebration,%20FL%2034747,%20United%20States&auid=4086847638451592103&ll=28.312466,-81.547812&lsp=9902&q=Corpus%20Christi%20Catholic%20Church&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhB9CgQIChAACgQIUhAHCgQIVRAPCgQIWRABCgUIpAEQARImKT+RJ0nXTjxAMTk28cRiY1TAOeLHPQIkUTxAQVljGpe7YlTAUAM%3D">1050 Celebration Ave,</br>Celebration, FL 34747</a></p>
+                                <a class="btn btn-accent btn-small" id="btn-show-ceremony"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show on Map</a>
                             </div>
-                            <div class="col-md-6">
-                                <h5>Mr. Amit Roy</h5>
-                                <p><i class="fa fa-mobile"></i> <a href="tel://+919412345678">+91 9412345678</a><br>
-                                    <i class="fa fa-mobile"></i> <a href="tel://+917123456789">+91 7123456789</a></p>
+                            <div class="col-md-6 text-center">
+                                <h4>Reception</h4>
+                                <h5>Gaylord Palms</br>Resort</h5>
+                                <p><a href="https://maps.apple.com/?address=6000%20W%20Osceola%20Pkwy,%20Kissimmee,%20FL%20%2034746,%20United%20States&auid=8818934965671364271&ll=28.343084,-81.526052&lsp=9902&q=Gaylord%20Palms%20Resort%20%26%20Convention%20Center&_ext=CjIKBQgEEOIBCgQIBRADCgQIBhALCgQIChAACgQIUhADCgQIVRANCgQIWRABCgUIpAEQARImKTlunQauVjxAMSk6VHT+YVTAOTUZ6b76WDxAQf8DNDpXYVTAUAQ%3D">6000 W Osceola Parkway,</br>Kissimmee, Florida 34746</a></p>
+                                <a class="btn btn-accent btn-small" id="btn-show-reception"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show on Map</a>
                             </div>
                         </div>
                         <div class="row text-center">
-                            <div class="col-md-6" style="padding: 5px;">
-                                <a class="btn btn-fill btn-small"
-                                   href="https://test.com"><i
-                                        class="fa fa-taxi"></i>&nbsp;&nbsp;Book Uber</a>
-                            </div>
-                            <div class="col-md-6" style="padding: 5px;">
-                                <a class="btn btn-accent btn-small" id="btn-show-map"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show
-                                    map</a>
+                            <div class="col" style="padding: 25px 5px;">
+                                <a class="btn btn-accent btn-small" id="btn-show-both"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;Show Both</a>
                             </div>
                         </div>
                     </div>
@@ -348,6 +346,9 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <h3>A picture is worth a thousand words!</h3>
+                    <div id="output">
+
+                    </div>
                     <p>
                         We'll be using the "POV" app to collect pictures from our guests. <strong>No downloading</strong> required!
                     </p>
@@ -358,7 +359,6 @@
             </div>
         </div>
     </section>
-
     <section class="rsvp text-center" id="rsvp">
         <div class="container">
             <div class="row">
@@ -381,14 +381,32 @@
             </div>
         </div>
     </section>
-    <section id="accommodations">
-
+    <section class="section-padding" id="accommodations">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">Accomodation Section</h3>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="poi">
-
+    <section class="section-padding" id="poi">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">Points of Interest Section</h3>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="registry">
-
+    <section class="section-padding" id="registry">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">Registry Section</h3>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -412,6 +430,6 @@
     <script src="js/vendor/ouical.js"></script>
     <script src="js/scripts.min.js"></script>
     <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQYE7GCVtpkwmk2hw2tQxDEKKkhbQ8iuc&callback=initMap"></script>
 </body>
 </html>

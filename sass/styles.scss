@@ -770,16 +770,16 @@ Embed video
 Google map
 ========================================================================== */
 #map-canvas {
-  height: 500px;
+  height: 700px;
   width: 100%;
 }
 #map-content-wrapper {
   position: relative;
-  margin-top: -502px;
+  margin-top: -700px;
   margin-bottom: 150px;
 }
 #map-content {
-  margin-top: 40px;
+  margin-top: 91px;
   padding: 50px 60px;
   background: #fff;
   -webkit-transition: opacity 0.5s, visibility 0.6s, margin-top 0.5s;
@@ -827,7 +827,7 @@ RSVP form
 
 }
 .rsvp {
-
+  padding-bottom: 20px;
   scroll-snap-align: start;
 }
 
