@@ -255,7 +255,7 @@ Navigation
 Hero
 ========================================================================== */
 .hero {
-  min-height: 750px;
+  min-height: 500px;
   height: 100vh;
   background: url('../img/St_Armands_Proposal_Centered_Compressed.JPG') center center;
   -webkit-background-size: cover;
@@ -292,19 +292,30 @@ Hero
 }
 .navigation {
   transition: all 300ms ease-in-out;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
   position: fixed;
+  //background-color: rgba(78,36,84,0.5);
+  background: linear-gradient(to bottom, rgba(78,36,84,0.5) 50%, transparent 100%);
+  //border-bottom: solid 1px rgba(78, 36, 84, 0.1);
   width: 100%;
   z-index: 999;
+}
+.nav_hover:hover {
+  //background: linear-gradient(to bottom, rgba(78,36,84,0.65) 85%, transparent 100%);
+  background-color: rgba(78,36,84,0.7);
 }
 .fixed {
   position: fixed;
   background-color: rgba(78, 36, 84);
-  z-index: 999;
   width: 100%;
+  z-index: 999;
 }
 header {
   padding: 20px 0;
-  border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+  //border-bottom: solid 1px rgba(78, 36, 84, 0.2);
   position: relative;
   width: 1170px;
   margin: 0 auto;

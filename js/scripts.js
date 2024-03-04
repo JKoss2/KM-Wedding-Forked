@@ -90,9 +90,9 @@ $(document).ready(function () {
             var scroll = $(window).scrollTop();
 
             if (scroll >= 20) {
-                $('section.navigation').addClass('fixed');
+                $('section.navigation').addClass('fixed').removeClass('nav_hover');
                 $('header').css({
-                    "border-bottom": "none",
+                    //"border-bottom": "none",
                     "padding": "15px 0"
                 });
                 $('header .member-actions').css({
@@ -102,9 +102,8 @@ $(document).ready(function () {
                     "top": "12px",
                 });
             } else {
-                $('section.navigation').removeClass('fixed');
+                $('section.navigation').removeClass('fixed').addClass('nav_hover');
                 $('header').css({
-                    "border-bottom": "solid 1px rgba(255, 255, 255, 0.2)",
                     "padding": "20px 0"
                 });
                 $('header .member-actions').css({
