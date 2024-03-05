@@ -127,7 +127,7 @@ $(document).ready(function () {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top - 50
-                    }, 2000);
+                    }, 1500);
                     return false;
                 }
             }

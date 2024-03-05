@@ -1,4 +1,4 @@
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     header {
         width: 90%;
         margin: 0 auto;
@@ -9,11 +9,15 @@
         width: 70%;
     }
 
+    #pov_qrcode {
+        margin-top: 10px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) {
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 43%;
     }
 }
 
@@ -25,7 +29,7 @@
     }
 
     .hero .hero-content {
-        padding-top: 50%;
+        padding-top: 49vh;
     }
 
     .header-nav {
@@ -220,6 +224,18 @@
 
     .events .rightcol {
         padding: 0 20px;
+        border-left: none;
+    }
+
+    .venues .leftcol {
+        padding: 0 15px;
+        margin-bottom: 15px;
+        border-right: none;
+    }
+
+    .venues .rightcol {
+        padding: 0 20px;
+        border-left: none;
     }
     
     #eng-pics .img-wrap {
@@ -250,7 +266,7 @@
 
 @media screen and (max-width: 640px) {
     .hero .hero-content {
-        padding-top: 100%;
+        padding-top: 49vh;
     }
 
     #eng-pics .img-wrap i {
@@ -289,7 +305,7 @@
 
 @media screen and (max-width: 480px) {
     .hero .hero-content {
-        padding-top: 110%;
+        padding-top: 49vh;
     }
     
     .hero .hero-content img {
@@ -353,7 +369,7 @@
 
 @media screen and (max-width: 320px) {
     .hero .hero-content {
-        padding-top: 130%;
+        padding-top: 30%;
     }
 
     .rsvp {

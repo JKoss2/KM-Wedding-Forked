@@ -55,8 +55,9 @@
                         <nav>
                             <ul class="primary-nav">
                                 <li><a href="#eng-pics">Engagement</a></li>
-                                <li><a href="#events">Timeline</a></li>
-                                <li><a href="#map">Venue</a></li>
+                                <li><a href="#events">Timeline / Attire</a></li>
+                                <li><a href="#venues">Venues</a></li>
+                                <li><a href="#map">Map</a></li>
                                 <li><a href="#photography">Photography</a></li>
                             </ul>
                             <ul class="member-actions">
@@ -181,36 +182,32 @@
     <section class="events section-padding" id="events">
         <div class="container">
             <div class="row">
-                <div class="col-md-12">
-                    <h3 class="header">Timeline</h3>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
                     <div class="wp3">
+                        <h3 class="header">Timeline</h3>
                         <p><strong>Ceremony</strong></p>
 
                         <h5>Corpus Christi Catholic Church, Celebration, FL <span class="time">11AM - 12PM</span></h5>
-                        <div id="church_event_img" class="col-md-12">
-                            <img src="img/Corpuschristichurchlakeelevation.jpg" width="100%" alt="">
-                        </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
                     <div class="wp4">
-                        <p><strong>Reception</strong></p>
-
-                        <h5>Gaylord Convention Center, Orlando, FL <span class="time">12PM - 5PM</span></h5>
-                        <div id="reception_event_image" class="col-md-12">
-                            <img src="img/GaylordConventionCenterFrontElevation.jpg" width="100%" alt="">
-                        </div>
+                        <h3 class="header">Suggested Attire</h3>
+                        <p><strong>Ladies</strong></p>
+                        <p>
+                            Wear your favorite below-the-knee dress, or a dressy skirt and top. Flowy fabrics and fun patterns encouraged. It’s Florida so sandals are always appropriate, but feel free to opt for heels or wedges if you prefer.
+                        </p>
+                        <p><strong>Gentlemen</strong></p>
+                        <p>
+                            Wear a suit if you’re feeling fancy, or opt for a collared shirt with kakis or slacks, with or without a sport coat. Ties optional.
+                        </p>
                     </div>
                 </div>
             </div>
             <div class="row section-padding">
                 <div class="col-md-4 col-md-offset-4 text-center">
-                    <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
-                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;Dress code
+                    <a id="attire" class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
+                        <i class="fa fa-barcode"></i>&nbsp;&nbsp;Suggested Attire
                     </a>
                 </div>
             </div>
@@ -236,6 +233,32 @@
         </div><!-- /.modal -->
     </section>
 
+    <section id="venues" class="venues section-padding">
+        <div class="container">
+            <div class="row section-padding">
+                <h3 class="header text-center">Venues</h3>
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="wp3">
+                        <p><strong>Ceremony</strong></p>
+
+                        <h5>Corpus Christi Catholic Church, Celebration, FL <span class="time">11AM - 12PM</span></h5>
+                        <div id="church_event_img" class="col-md-12">
+                            <img src="img/Corpuschristichurchlakeelevation.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="wp4">
+                        <p><strong>Reception</strong></p>
+                        <h5>Gaylord Convention Center, Orlando, FL <span class="time">12AM - 5PM</span></h5>
+                        <div id="reception_event_image" class="col-md-12">
+                            <img src="img/GaylordConventionCenterFrontElevation.jpg" width="100%" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 <!--    <section id="video-bg" class="hidden-sm hidden-xs">-->
 <!--        <div id="bgndVideo" class="player"-->
 <!--             data-property="{videoURL:'https://youtu.be/9giqL1H6yRs',containment:'#video-bg',autoPlay:true, mute:true, showControls:false, startAt:80, stopAt:259, opacity:1}">-->
@@ -247,8 +270,8 @@
 <!--    </section>-->
 
     <section id="map" class="map section-padding">
-        <div class="text-center">
-            <h3>How do I get there?</h3>
+        <div class="header text-center">
+            <h3>Local Map</h3>
         </div>
         <div id="map-canvas"></div>
         <div id="map-content-wrapper" class="container pointer-events-none">
@@ -291,15 +314,40 @@
                 <div class="col-md-12 text-center">
                     <h3>A picture is worth a thousand words!</h3>
                     <p>
-                        We'll be using the "POV" app to collect pictures from our guests. <strong>No downloading</strong> required!
+                        We'll be using "POV" to collect pictures from our guests. <strong>No downloading</strong> required!
                     </p>
-                    <div id="povapp_box">
-                        <a id="povapp_img" href="https://pov.camera">
-                            <img src="img/pov-logo.png" alt="">
-                        </a>
+                    <p>
+                        Click the icon to open the camera or scan the QR code!
+                    </p>
+                    <div class="row">
+                        <div class="col-md-4 col-md-offset-4">
+                            <div class="row">
+                                <div id="povapp_box" class="col-lg-8">
+                                    <a id="povapp_img" class=""
+                                       href="https://pov.camera/qr/0BF4ED74-DD22-4C0D-AE96-B1AD6018A41C"
+                                       target="_blank">
+                                        <img src="img/pov-logo.png" alt="Open your POV Camera">
+                                    </a>
+                                </div>
+                                <div id="pov_qrcode" class="col-lg-4">
+                                    <a class="" href="https://pov.camera/qr/0BF4ED74-DD22-4C0D-AE96-B1AD6018A41C">
+                                        <img src="img/qrcode.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+<!--            <div class="row pov_download_row">-->
+<!--                <a aria-label="Download on the App Store" class="pov_apple_down_btn" href="https://apps.apple.com/us/app/pov-disposable-party-camera/id1636032890" rel="nofollow noreferrer" role="link" tabindex="0" target="_blank">-->
+<!--                    <img alt="Download on the App Store" class="pov_apple_down_img" src="img/apple_app_store_download.png">-->
+<!--                </a>-->
+<!--                <a aria-label="Get it on Google Play" class="pov_android_down_btn" href="https://play.google.com/store/apps/details?id=com.untitledshows.pov&hl=en_US&gl=US" rel="nofollow noreferrer" role="link" tabindex="0" target="_blank">-->
+<!--                    <img alt="Get it on Google Play" class="pov_android_down_img" src="img/google_play_download.png">-->
+<!--                </a>-->
+
+<!--            </div>-->
         </div>
     </section>
 
